@@ -18,4 +18,14 @@ group :development do
   gem 'bullet'
 end
 
-gem 'debugger', group: [:development, :test]
+group :test do
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'factory_girl_rails'
+end
+
+group :test, :development do
+  gem 'debugger'
+end
+
+
