@@ -28,6 +28,8 @@ ActiveRecord::Schema.define(version: 20130816203623) do
   end
 
   create_table "legislators", force: true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
     t.string   "party"
     t.string   "twitter"
     t.string   "website"
