@@ -1,17 +1,15 @@
 class BillsController < ApplicationController
 
-  def get
-    bill = Bill.find_by(openstates_uid: params[:openstates_uid])
+  def create
+    @bill = Bill.new(bill_params)
 
     respond_to do |format|
-      format.json { render json: bill ? bill.id : nil }
+      if @bill.save
+        format.json { render json: @bill, status: :created, location: @bill }
+      else
+        format.json { render json: @bill.errors, status: :unprocessable_entity }
+      end
     end
-  end
-
-  def create
-    Bill.create(bill_params)
-
-    redirect_to root_path
   end
 
   private
