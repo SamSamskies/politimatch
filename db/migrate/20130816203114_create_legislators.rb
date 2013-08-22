@@ -8,7 +8,7 @@ class CreateLegislators < ActiveRecord::Migration
       t.string :website
       t.string :district
       t.string :photo
-      t.integer :leg_id
+      t.string :leg_id
 
       t.timestamps
     end
