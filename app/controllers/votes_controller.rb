@@ -8,6 +8,6 @@ class VotesController < ApplicationController
   private
 
   def vote_params
-    params.require(:vote).permit(:vote)
+    params.permit(:vote)
   end
 end

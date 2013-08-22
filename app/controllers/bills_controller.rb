@@ -8,6 +8,6 @@ class BillsController < ApplicationController
   private
 
   def bill_params
-    params.require(:bill).permit(:name, :number, :summary, :full_text_url, :date_introduced, :date_passed)
+    params.permit(:name, :number, :summary, :full_text_url, :date_introduced, :date_passed)
   end
 end
