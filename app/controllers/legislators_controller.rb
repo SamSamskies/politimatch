@@ -8,6 +8,6 @@ class LegislatorsController < ApplicationController
   private
 
   def legislator_params
-    params.require(:legislator).permit(:first_name, :last_name, :party, :twitter, :website, :district, :photo, :leg_id)
+    params.require(:legislator).permit(:first_name, :last_name, :party, :twitter, :website, :district, :photo_url, :leg_id)
   end
 end
