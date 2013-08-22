@@ -8,6 +8,6 @@ class VotesController < ApplicationController
   private
 
   def vote_params
-    params.permit(:vote)
+    params.permit(:stance, :legislator_id, :bill_id)
   end
 end

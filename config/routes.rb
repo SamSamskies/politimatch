@@ -6,6 +6,8 @@ Politimatch::Application.routes.draw do
   get 'legislators/:leg_id' => 'legislators#get'
 
   resources :bills, only: [:create]
+  get 'bills/:openstates_uid' => 'bills#get'
+
   resources :votes, only: [:create]
 
   # Example of regular route:

@@ -3,7 +3,7 @@ class CreateVotes < ActiveRecord::Migration
     create_table :votes do |t|
       t.integer :legislator_id
       t.integer :bill_id
-      t.string :vote
+      t.string :stance
 
       t.timestamps
     end
