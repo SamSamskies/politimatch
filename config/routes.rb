@@ -3,6 +3,8 @@ Politimatch::Application.routes.draw do
   root 'welcome#index'
 
   resources :legislators, only: [:create]
+  get 'legislators/:leg_id' => 'legislators#get'
+
   resources :bills, only: [:create]
   resources :votes, only: [:create]
 
