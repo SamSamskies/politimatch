@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 20130816203623) do
     t.string   "twitter"
     t.string   "website"
     t.string   "district"
-    t.string   "photo"
+    t.string   "photo_url"
     t.string   "leg_id"
     t.datetime "created_at"
     t.datetime "updated_at"
