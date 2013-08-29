@@ -6,7 +6,7 @@ class BillsController < ApplicationController
   end
 
   def create
-    respond_with Bill.create(legislator_params)
+    respond_with Bill.create(bill_params)
   end
 
   private
