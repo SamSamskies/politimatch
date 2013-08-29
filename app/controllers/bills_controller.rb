@@ -1,15 +1,12 @@
 class BillsController < ApplicationController
+  respond_to :json
+
+  def show
+    respond_with Bill.find_by(openstates_uid: params[:openstates_uid])
+  end
 
   def create
-    @bill = Bill.new(bill_params)
-
-    respond_to do |format|
-      if @bill.save
-        format.json { render json: @bill, status: :created, location: @bill }
-      else
-        format.json { render json: @bill.errors, status: :unprocessable_entity }
-      end
-    end
+    respond_with Bill.create(legislator_params)
   end
 
   private
