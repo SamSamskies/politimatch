@@ -8,7 +8,7 @@ class LegislatorsController < ApplicationController
   end
 
   def create
-    @legislator = Legislator.create(legislator_params)
+    @legislator = Legislator.new(legislator_params)
 
     respond_with(@legislator) do |format|
       if @legislator.save
