@@ -2,21 +2,11 @@ class LegislatorsController < ApplicationController
   respond_to :json
 
   def show
-    @legislator = Legislator.find_by(leg_id: params[:id])
-
-    respond_with @legislator
+    respond_with Legislator.find_by(leg_id: params[:id])
   end
 
   def create
-    @legislator = Legislator.new(legislator_params)
-
-    respond_with(@legislator) do |format|
-      if @legislator.save
-        format.json { render json: @legislator, status: :created, location: @legislator }
-      else
-        format.json { render json: @legislator.errors, status: :unprocessable_entity }
-      end
-    end
+    respond_with Legislator.create(legislator_params)
   end
 
   private
