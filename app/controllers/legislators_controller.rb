@@ -1,11 +1,10 @@
 class LegislatorsController < ApplicationController
+  respond_to :json
 
-  def get
-    legislator = Legislator.find_by(leg_id: params[:leg_id])
+  def show
+    @legislator = Legislator.find_by(leg_id: params[:id])
 
-    respond_to do |format|
-      format.json { render json: legislator ? legislator.id : nil }
-    end
+    respond_with @legislator
   end
 
   def create
