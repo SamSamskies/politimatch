@@ -8,9 +8,15 @@ class LegislatorsController < ApplicationController
   end
 
   def create
-    Legislator.create(legislator_params)
+    @legislator = Legislator.create(legislator_params)
 
-    redirect_to root_path
+    respond_with(@legislator) do |format|
+      if @legislator.save
+        format.json { render json: @legislator, status: :created, location: @legislator }
+      else
+        format.json { render json: @legislator.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   private
