@@ -3,129 +3,166 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @font-face {
 	font-family: "Liberation Sans";
-	font-weight: 200;
+	font-weight: 300;
 	font-style: bold;
 	src: url('media/LiberationSans-Regular.ttf') format('truetype');
 }
 body {
-	margin: 175px auto;
-	width: 800px;
+	
+	width: 100%;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Liberation Sans", Helvetica, Arial, "Lucida Grande", sans-serif; 
-	font-weight: 400;
-	background: url(politimatch.png) white no-repeat fixed;
-	background-size: cover;
+	font-weight: 650;
+	margin-top: 30px;
+
+
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: inherit;
-	font-weight: 400;
-    margin: 0 30px;
+	font-weight: 200;
+    margin: 10;
+    line-height: 20px
 
-}
-a, a:visited {
-	text-decoration: none;
-	color: #06d;
-}
-a:hover {
-	text-decoration: underline;
+
 }
 #heading {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: rgba(0, 0, 0, 1);
-	color: white;
+	background: #A9A9A9;
+	color: black;
 	width: 100%;
 	text-align: center;
-	padding: 10px;
+	padding: 20px;
 }
 #heading .container {
 	width: 100%;
 }
-#heading .container p {
-	color: white;
-	font-size: 21px
-}
+
 #heading h1 {
 	display: inline;
-	margin: 0 0px;
+	margin: 0 10px;
 	
-}
-#heading .tagline {
-	display: inline;
-	margin: 0 40px;
-	letter-spacing: 0.2em;
-}
-#heading .corner {
-	float: right;
-	margin: 8px;
-}
-#info {
-	height: 20px;
-	width: 28px;
-	background: #777;
-	color: #999;
-	font-weight: bold;
-	display: block;
-	text-align: center;
-	font-size: 50pt;
-	line-height: 20px;
-	border-radius: 8px;
-	margin: 20;
-}
-#info:hover {
-	color: black;
-	background-color: #06f;
-	text-decoration: none;
-}
-.container {
-	width: 850px;
-	margin: 20px fixed;
-}
-.center {
-	text-align: center;
-}
-.nodisplay {
-	display: none;
-}
-#intro ol {
-	text-indent: 0;
-	margin: 0;
-	padding: 0;
-}
-#intro li {
-	text-indent: 0;
-	list-style-type: none;
-	width: 200px;
-	margin: 20px;
-	padding-top: 120px;
-	text-align: center;
-	float: left;
-}	
-#intro li:nth-child(3n+1) {
-	background: url(politimatch.png) top center no-repeat;
-}
-#intro li:nth-child(3n+2) {
-	background: url(politimatch.png) top center no-repeat;
-}
-#intro li:nth-child(3n) {
-	background: url(politimatch.png) top center no-repeat;
-}
-#voting, #about, #intro, #results {
-	background-color: rgba(230, 230, 230, 0.9);
-	padding: 30px;
-}
-#about {
-	background-color: rgba(230, 230, 230, 0.9);
 
 }
-#voting {
-	padding: 40px 80px;
+#intro .container p {
+	color: black	;
+	font-size: 50px ;
+	width: 100%;
+	margin: 0 40px;
+
 }
+#main .container {
+
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding:10px;
+
+
+}
+
+#main .container img {
+
+    display: block;
+    margin: 20px auto;
+    width: 60%;
+
+
+}
+
+#main .container h1.blue {
+    
+    color: blue;
+    font-size: 80px;
+    margin: 30px auto;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+	text-align: center;
+
+
+}
+#main .container h2.tagline {
+    
+    color: black;
+    font-size: 30px;
+    margin: 70px auto;
+    display: block;
+    width: 100%;
+	text-align: center;
+
+
+
+}
+#main .container h1.red {
+
+	color: red;
+	font-size: 80px;
+    margin: 0px auto ;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+	text-align: center;
+  
+
+
+}
+#intro, {
+	background-color: white;
+	padding: 180px;
+	background-color: #C8C8C8 
+
+
+}
+#header .container{
+
+	width: 100%;
+	margin: 0 auto;
+	display: inline;
+
+
+}
+
+#header .container h1{
+    
+    color: black;
+	font-size: 70px;
+	margin: 20px;
+	float: center;
+	text-indent: 0;
+	padding-top: 50px;
+	text-align: center;
+
+    
+
+}
+
+#header .container  h2{
+
+    color: black;
+    font-size: 23px;
+    width: 80%;
+	margin: 70px auto;
+	display: inline-block;
+	position:relative;
+	line-height: 30px;
+	background-position: inherit
+
+}
+
+#header .container  img{
+
+    display: inline-block;
+    margin: 40px auto;
+    width: 100%;
+
+}
+
 #voting ul {
 	list-style: none;
 	display: block;
 	width: 256px;
-	padding: 0;
+	padding: 10;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -138,14 +175,17 @@ a:hover {
 	text-align: center;
 }
 #project {
-	font-size: 25pt;
-	font-style: italic;
+	font-size: 30pt;
+	font-style: normal;
 }
 #summary {
-	font-size: 20pt;
+	font-size: 30pt;
+}
+#question {
+	font-size: 22pt;
 }
 .shady {
-	font-size: 10pt;
+	font-size: 15pt;
 	color: gray;
 }
 #vote-aye, #vote-nay, #vote-abstention, #vote-absentee, #vote-skip, a.action {
@@ -157,7 +197,7 @@ a:hover {
 	text-align: center;
 	text-indent: 0;
 	border-radius: 6px;
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: #E0E0EB;
 }
 #vote-aye {
 	font-size: 32px;
@@ -182,7 +222,7 @@ a:hover {
 #vote-abstention {
 	width: 244px;
 	padding: 10px 0;
-	font-size: 10pt;
+	font-size: 15pt;
 	color: #f90;
 }
 #vote-abstention:hover {
@@ -192,7 +232,7 @@ a:hover {
 #vote-absentee {
 	width: 244px;
 	padding: 10px 0;
-	font-size: 10pt;
+	font-size: 15pt;
 	color: #999;
 }
 #vote-absentee:hover {
@@ -208,45 +248,45 @@ a:hover {
 #vote-skip:hover {
 	color: white;
 	background-color: #06f;
-}
-#start {
-	font-size: 35px;
+
 }
 em {
-	color:#FF0066 ;
+	color:grey ;
 	font-style: bold;
 }
 .news {
 	margin: 48px 192px;
+
+
 }
-a.action {
-	padding: 12px 16px;
-	margin: 0 auto;
-	color: white;
-	background-color: #FF0066;
-}
+
 a.action:hover {
 	color: white;
 	background-color: black;
+	display: center;
 }
+
+
+
+
 #progress-bar {
 	width: 100%;
-	background-color: blue;
+	background-color: black;
 	border-radius: 8px; /* (height of inner div) / 2 + padding */
-	padding: 5px;
+	padding: 10px;
 }
 #progress-bar span {
 	display: block;
-	background-color: #06f;
+	background-color: white;
 	width: 0%; /* Adjust with JavaScript */
 	height: 10px;
 	border-radius: 5px;
 }
 #results table .shady {
-	font-size: 10pt;
+	font-size: 20pt;
 }
 #results table {
-	font-size: 10pt;
+	font-size: 20pt;
 	width: 100%;
 }
 #results table td {
@@ -254,18 +294,21 @@ a.action:hover {
 }
 #results table thead td {
 	color: white;
-	background-color: #06f;
+	background-color:#FF0066 ;
 	padding: 12px 8px;
 }
 #results table thead td:hover {
-	background-color: #39f;
+	background-color: black;
 	cursor: pointer;
 }
 #results table tbody tr:nth-child(even) {
 	background-color: rgba(0, 122, 255, 0.1);
 }
+#representatives {
+	font-size: 20pt;
+}
 .legend {
-	font-size: 8pt;
+	font-size: 30pt;
 }
 .tooltip {
 	position: absolute;
@@ -274,7 +317,7 @@ a.action:hover {
 	width: 320px;
 	margin: 0;
 	padding: 0 8px;
-	font: 8pt sans-serif;
+	font: 15pt sans-serif;
 	background: rgba(255, 255, 255, 0.9);
 	border: 0;
 	pointer-events: none;
@@ -295,6 +338,7 @@ a.action:hover {
 	border: 0;
 	pointer-events: none;
 	cursor: pointer;
+
 }
 select {
 	padding: 4px;

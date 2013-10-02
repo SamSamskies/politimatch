@@ -1,0 +1,14 @@
+</div>
+<div id="about">
+<p><em><h1>How it works</em></h1><p>
+<ol>
+<h2>
+<li>Thirty bills, that have been discussed in California in the last 3 years, will be displayed. </li>
+<li>Each bill will display 4 options (<em> positive</em>, <em>negative</em>, <em>absence</em> and <em>absent </em>).</li>
+<li>You have to choose one option for each bill displayed. </li>
+<li>After you are done voting all of the bills, a table with the names of the representatives that have voted in coincidence or dissidence with your votes will be shown.</li>
+</h2>
+</ol>
+</div>
+<p class="center"><a id="start" class="action" href="javascript:void(0);">START NOW</a></p>
+</div> 

@@ -1,0 +1,17 @@
+<div id="voting">
+<p id="project">Name of Bill</p>
+<h2>Ordinance making marijuana offenses the police department's lowest priority.</h2>
+<p id="summary">Summary</p> <p id="date" class="shady">October 2, 2010</p>
+<h2>The ordinance also creates an oversight committee through which people who feel they were wrongly targeted can seek a review of their cases. </h2>
+<p> 
+<p class="center"><a id="link" href="javascript:void(0);"> Complete Bill </a></p>
+</a> 
+<p id="question">Would you vote YES or NO on this project?</p>
+<ul>
+<li><a id="vote-aye" href="javascript:void(0);">YES</a></li>
+<li><a id="vote-nay" href="javascript:void(0);">NO</a></li>
+<li><a id="vote-abstention" href="javascript:void(0);">ABSTAIN</a></li>
+</ul>
+<p id="progress-status" class="shady">Completed: 0 / 30</p>
+<p id="progress-bar"><span></span></p>
+</div>
