@@ -8,11 +8,11 @@
 	src: url('media/LiberationSans-Regular.ttf') format('truetype');
 }
 body {
-	
+
 	width: 100%;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Liberation Sans", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Liberation Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 650;
-	background: asset-url('politimatch.png', image) white no-repeat fixed;
+	background: asset_url('politimatch.png') white no-repeat fixed;
 	margin-top: 30px;
 
 
@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 #heading h1 {
 	display: inline;
 	margin: 0 10px;
-	
+
 
 }
 #intro .container p {
@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main .container h1.blue {
-    
+
     color: blue;
     font-size: 80px;
     margin: 30px auto;
@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 #main .container h2.tagline {
-    
+
     color: black;
     font-size: 30px;
     margin: 70px auto;
@@ -104,14 +104,14 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     width: 100%;
 	text-align: center;
-  
+
 
 
 }
 #intro, {
 	background-color: white;
 	padding: 180px;
-	background-color: #C8C8C8 
+	background-color: #C8C8C8
 
 
 }
@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .container h1{
-    
+
     color: black;
 	font-size: 70px;
 	margin: 20px;
@@ -138,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
 #intro li:nth-child(3n+1) {
 	background: url(politimatch.png) top center no-repeat;
 
-    
+
 
 }
 
@@ -274,11 +274,11 @@ a.nextpage:hover {
 
 
 #nextpage .button {
-     
+
     color: red;
 	background-color: white;
 	margin: 0px auto;
-     
+
 
 }
 
