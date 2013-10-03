@@ -260,14 +260,22 @@ em {
 
 }
 
-a.action:hover {
+a.nextpage:hover {
 	color: white;
 	background-color: black;
 	display: center;
+	margin: 0px auto;
 }
 
 
+#nextpage .button {
+     
+    color: red;
+	background-color: white;
+	margin: 0px auto;
+     
 
+}
 
 #progress-bar {
 	width: 100%;
