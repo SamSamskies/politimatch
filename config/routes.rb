@@ -2,9 +2,11 @@ Politimatch::Application.routes.draw do
 
   root 'welcome#index'
 
-  resources :legislators, only: [:create]
-  resources :bills, only: [:create]
-  resources :votes, only: [:create]
+  resources :legislators, only: [:create, :show]
+
+  resources :bills, only: [:create, :show]
+
+  resources :votes, only: [:create, :show]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

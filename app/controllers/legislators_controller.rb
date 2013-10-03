@@ -1,13 +1,17 @@
 class LegislatorsController < ApplicationController
-  def create
-    Legislator.create(legislator_params)
+  respond_to :json
 
-    redirect_to root_path
+  def show
+    respond_with Legislator.find_by(leg_id: params[:id])
+  end
+
+  def create
+    respond_with Legislator.create(legislator_params)
   end
 
   private
 
   def legislator_params
-    params.require(:legislator).permit(:first_name, :last_name, :party, :twitter, :website, :district, :photo)
+    params.permit(:first_name, :last_name, :party, :twitter, :website, :district, :photo_url, :leg_id)
   end
 end

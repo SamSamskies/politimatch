@@ -1,13 +1,17 @@
 class BillsController < ApplicationController
-  def create
-    Bill.create(bill_params)
+  respond_to :json
 
-    redirect_to root_path
+  def show
+    respond_with Bill.find_by(openstates_uid: params[:openstates_uid])
+  end
+
+  def create
+    respond_with Bill.create(bill_params)
   end
 
   private
 
   def bill_params
-    params.require(:bill).permit(:name, :number, :summary, :full_text_url, :date_introduced, :date_passed)
+    params.permit(:title,:summary, :full_text_url, :formal_id, :session_id, :date_introduced, :date_passed)
   end
 end

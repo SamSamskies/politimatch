@@ -14,10 +14,12 @@
 ActiveRecord::Schema.define(version: 20130816203623) do
 
   create_table "bills", force: true do |t|
-    t.string   "name"
-    t.string   "number"
-    t.string   "summary"
+    t.string   "title"
+    t.text     "summary"
     t.string   "full_text_url"
+    t.string   "formal_id"
+    t.string   "session_id"
+    t.string   "openstates_uid"
     t.date     "date_introduced"
     t.date     "date_passed"
     t.datetime "created_at"
@@ -31,7 +33,8 @@ ActiveRecord::Schema.define(version: 20130816203623) do
     t.string   "twitter"
     t.string   "website"
     t.string   "district"
-    t.string   "photo"
+    t.string   "photo_url"
+    t.string   "leg_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -39,7 +42,7 @@ ActiveRecord::Schema.define(version: 20130816203623) do
   create_table "votes", force: true do |t|
     t.integer  "legislator_id"
     t.integer  "bill_id"
-    t.string   "vote"
+    t.string   "stance"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
