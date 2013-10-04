@@ -8,11 +8,11 @@
 	src: url('media/LiberationSans-Regular.ttf') format('truetype');
 }
 body {
-	
+
 	width: 100%;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Liberation Sans", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Liberation Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 650;
-	background: asset-url('glasses.jpg', image) white no-repeat fixed;
+	background: url('glasses.jpg', image) white no-repeat fixed;
 	margin-top: 30px;
 
 
@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 #heading h1 {
 	display: inline;
 	margin: 0 10px;
-	
+
 
 }
 #intro .container p {
@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main .container h1.blue {
-    
+
     color: blue;
     font-size: 80px;
     margin: 30px auto;
@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 #main .container h2.tagline {
-    
+
     color: black;
     font-size: 30px;
     margin: 70px auto;
@@ -104,14 +104,14 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     width: 100%;
 	text-align: center;
-  
+
 
 
 }
 #intro, {
 	background-color: white;
 	padding: 180px;
-	background-color: #C8C8C8 
+	background-color: #C8C8C8
 
 
 }
@@ -125,20 +125,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .container h1{
-    
+
     color: black;
-	font-size: 70px;
-	margin: 20px;
+	font-size: 50px;
+	margin: 20px auto;
 	float: center;
 	text-indent: 0;
 	padding-top: 50px;
 	text-align: center;
-	float: left;
+
 }
 #intro li:nth-child(3n+1) {
 	background: url(politimatch.png) top center no-repeat;
 
-    
 
 }
 
@@ -270,18 +269,35 @@ a.nextpage:hover {
 	background-color: black;
 	display: center;
 	margin: 0px auto;
-}
-
-
-#nextpage .button {
-     
-    color: red;
-	background-color: white;
-	margin: 0px auto;
-     
 
 }
 
+#button {
+
+    font-size: 50px;
+    color:white;
+    margin: 20px auto;
+    float: center;
+    background: none repeat scroll 0% 0% red;
+    border-top: 2px solid red;
+    border-left: 2px solid red;
+    border: 0px none;
+    padding-left: 10px;
+    padding-right:10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+
+
+}
+
+#button_container {
+
+	text-align: center;
+	margin: 100px 100px 100px 100px;
+	color: white;
+
+}
 #progress-bar {
 	width: 100%;
 	background-color: black;

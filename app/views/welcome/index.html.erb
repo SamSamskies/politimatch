@@ -16,14 +16,14 @@
 
 	 <div id="main">
 	 	<div class="container">
-	    <img src="assets/glasses.jpg"/>
+      <%= image_tag 'glasses.jpg' %>
 	    <img class="displayed" />
 	    <h1 class="red"> Look beyond </h1>
 	    <h1 class="blue"> your party  </h1>
 	    <h2 class="tagline"> btw: you might need to change your lens.
 	  </div>
-	 </div>    
-        
+	 </div>
+
 	<div id="intro">
 	 <div class="container">
 			<p style="font-size: 50px"> Politimatch is your chance to know if your politicians match your <em> principles, </em> <em> values </em> and <em>ideas. </em> </p>
@@ -32,30 +32,30 @@
 
     <div id="header">
     <div class="container">
-    <h1>How it works</h1>
+     <h1>How it works</h1>
     <div id="How it works" style="margin:0px auto; width:70%">
     <div id="How" style="float:left; margin:0; width:33%;">
-     <img src="assets/how.jpg" /> 
+     <%= image_tag 'how.jpg' %>
      <h2>Twenty bills that have been discussed in California in the last 3 years, will be displayed.</h2>
     </div>
      <div id="yes" style="float:left; margin:0; width:33%;">
-     <img src="assets/votes.jpg" />
-     <h2>Each bill will display 3 options like in Congress:  
-     (<em> positive</em>, <em>negative</em> and <em>abstain </em>)You have to choose one option for each bill displayed.</h2> 
+     <%= image_tag 'votes.jpg' %>
+     <h2>Each bill will display 3 options like in Congress:
+     (<em> positive</em>, <em>negative</em> and <em>abstain </em>)You have to choose one option for each bill displayed.</h2>
     </div>
      <div id="Representatives" style="float:left; margin:0;width:33%">
-     <img src="assets/representatives.jpg" />
+     <%= image_tag 'representatives.jpg' %>
      <h2>After you are done voting all of the bills, a table with the names of the representatives that have voted in coincidence or dissidence with your votes will be shown. </h2>
-     
       </div>
-	 </div>
+ </body>
 
-     <div id="nextpage">
-     <div class="button" >
-      START NOW  
-      </div>
+    <div id="button_container">
+     <a id="button" href="javascript:void(0);">
+    Start Now
+     </a>
+    </div>
+    </div>
 
-</body> 
 </html>
 
 
